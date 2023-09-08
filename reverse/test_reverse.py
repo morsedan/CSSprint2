@@ -11,7 +11,7 @@ class LinkedListTests(unittest.TestCase):
     self.list.add_to_head(2)
     self.assertEqual(self.list.head.value, 2)
 
-  def test_contains(self):
+  def test_contains(self):  # sourcery skip: class-extract-method
     self.list.add_to_head(1)
     self.list.add_to_head(2)
     self.list.add_to_head(10)
