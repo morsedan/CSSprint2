@@ -13,7 +13,7 @@ class RingBufferTests(unittest.TestCase):
         self.buffer.append('a')
         self.assertEqual(self.buffer.get(), ['a'])
 
-    def test_filling_buffer_to_capacity(self):
+    def test_filling_buffer_to_capacity(self): # sourcery skip: class-extract-method
         self.buffer.append('a')
         self.buffer.append('b')
         self.buffer.append('c')
